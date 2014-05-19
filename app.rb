@@ -8,6 +8,10 @@ class HireJustin < Sinatra::Base
   get '/' do
     send_file File.join(settings.public_folder, 'index.html')
   end
+
+  get '/projects/anhsongaming/' do
+    send_file File.join(settings.public_folder, 'projects/anhsongaming/index.html')
+  end
 end
 
 HireJustin.run!
