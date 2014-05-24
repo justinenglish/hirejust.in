@@ -1,51 +1,100 @@
 body {
-  background-color: #A7D0F2;
-  margin: 0;
-  padding: 50px 0;
+  background-color: #2D7BE5;
 }
 
 #layout {
   width: 1000px;
-  background-color: white;
   margin-left: auto;
   margin-right: auto;
 }
 
 #header {
   height: 150px;
-  background: url(../images/facebook_icon.png) no-repeat;
-  background: url(../images/twitter_icon.png) no-repeat;
-  background-color: #04508F;
+  position: relative;
 }
 
-#header h2 {
-  color: #aaa;
-  font-family: sans-serif;
-  font-size: 60px;
-  margin: 0 0 5px 300px;
-}
-
-#header h4 {
-  color: #aaa;
-  font-size: 14px;
-  margin-left: 230px;
-}
-
-.footer {
+#banner {
   height: 150px;
-  background: #04508F;
+  background-color: #190765;
+  border-radius: 10px 10px 0 0;
+  position: relative;
 }
 
-.footer p {
-  color: #aaa;
-  width: 50px;
-  margin: 5px 0 0 300px;
+.name {
+  background: url('../images/justinenglish_name.png') no-repeat;
+  position: relative;
+  height: 81px;
+  width: 500px;
+  bottom: -83px;
+  left: 55px;
+  z-index: 999;
+}
+
+.twitter_logo {
+  background: url('../images/twitter_logo.png');
+  position: relative;
+  left: 935px;
+  top: 0px;
+  width: 45px;
+  height: 45px;
+  /*box-shadow: 3px 3px 10px black;*/
+}
+
+.facebook_logo {
+  background: url('../images/facebook_logo.png');
+  position: relative;
+  left: 880px;
+  top: -44px;
+  width: 45px;
+  height: 45px;
+}
+
+.gh_logo {
+  background: url('../images/gh_logo.png');
+  position: relative;
+  left: 827px;
+  top: -90px;
+  width: 45px;
+  height: 45px;
+}
+
+#banner p {
+  width: 250px;
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  left: 400px;
+  top: -15px;
 }
 
-.footer ul {
+#banner li {
+  color: white;
   list-style: none;
-  color: #aaa;
-  width: 20px;
+}
+
+#banner ul {
+  position: relative;
+  left: 550px;
+  top: -5px;
+}
+
+
+#content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+}
+
+.skills {
+  list-style: none;
+  color: white;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+.skills li:nth-child(odd) {
+  padding: 10px 0 0 0;
+  margin-left: 40px;
 }
