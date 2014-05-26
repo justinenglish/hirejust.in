@@ -26,7 +26,7 @@ body {
   margin-top: 77px;
 }
 
-.main {
+#player {
   background-color: #e5e5e5;
   height: 415px;
 }
@@ -93,4 +93,12 @@ body {
 
 .boxes ul li:nth-child(5n) {
   margin-right: 0;
+}
+
+.playbutton {
+  background-image: url(../images/ytbutton.png);
+  background-repeat: no-repeat;
+  height: 120px;
+  cursor: pointer;
+  background-position: center;
 }
