@@ -30,8 +30,7 @@ body {
   z-index: 999;
 }
 
-.twitter_logo {
-  background: url('../images/twitter_logo.png');
+.twitter_logo {;
   position: relative;
   left: 935px;
   top: 0px;
@@ -40,20 +39,10 @@ body {
   /*box-shadow: 3px 3px 10px black;*/
 }
 
-.facebook_logo {
-  background: url('../images/facebook_logo.png');
-  position: relative;
-  left: 880px;
-  top: -44px;
-  width: 45px;
-  height: 45px;
-}
-
 .gh_logo {
-  background: url('../images/gh_logo.png');
   position: relative;
   left: 827px;
-  top: -90px;
+  top: 0px;
   width: 45px;
   height: 45px;
 }
