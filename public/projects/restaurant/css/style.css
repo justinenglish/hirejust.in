@@ -136,7 +136,7 @@ body {
 
 #modal_popup {
   opacity: 1;
-  background-color: white;
+  background-color: #D5CCA4;
   width: 600px;
   height: 600px;
   box-shadow: 2px 2px 5px black;
@@ -151,4 +151,40 @@ body {
   left: 0;
   right: 0;
   top: 10%;
+}
+
+.modal_list {
+  margin-left: 20px;
+  margin-top: 70px;
+}
+
+.modal_list ul {
+  padding-left: 10px;
+}
+
+.column1 li {
+  list-style: none;
+  padding: 3px;
+}
+
+.column1 li:nth-child(5) {
+  margin-bottom: 70px;
+}
+
+.column2 {
+  list-style: none;
+}
+
+.column2 li {
+  padding: 3px;
+}
+
+.close_button {
+  width: 100px;
+  height: 35px;
+  position: relative;
+  left: 435px;
+  cursor: pointer;
+  background-color: #2B2921;
+  color: white;
 }
