@@ -1,8 +1,9 @@
 var notes = JSON.parse(localStorage.getItem("notes")) || [];
 var append_notes = function() {
+  $('hr').remove();
   $('ul li').remove();
   for(i = 0; i < notes.length; i++) {
-    $('ul').append("<li>"+notes[i]+"</li>");
+    $('ul').append("<li>"+notes[i]+"</li>"+"<hr>");
   }
 }
 var storage = function() {

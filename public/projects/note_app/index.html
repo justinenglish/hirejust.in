@@ -3,14 +3,20 @@
   <head>
     <title>JavaScript Input</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <input type="text" placeholder="Add a note" id="text_input">
-    <input type="submit" value="Add Note" id="add_note">
     <div id="layout">
-      <h2>Notes:</h2>
-      <ul>
-      </ul>
+      <div class="container">
+        <div class="inputs">
+          <img src="images/ripped_paper.png" class="ripped_paper">
+          <input type="text" placeholder="Add a note" id="text_input">
+          <input type="submit" value="Add Note" id="add_note">
+        </div>
+        <h2>Notes:</h2>
+        <ul>
+        </ul>
+      </div>
     </div>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
     <script type="text/javascript" src="js/note_app.js"></script>
