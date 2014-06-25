@@ -12,14 +12,15 @@ var storage = function() {
   if(input.val() == "") {
     return;
   }
-  localStorage.setItem("notes", JSON.stringify(notes));
   notes.push(input.val());
-  input.val("");
+  notes.reverse();
+  localStorage.setItem("notes", JSON.stringify(notes));
   append_notes();
+  input.val("");
 }
 
 
-$(document).ready(function(){
+$(document).ready(function() {
   append_notes();
   $('#add_note').on('click', function(){
     storage();
