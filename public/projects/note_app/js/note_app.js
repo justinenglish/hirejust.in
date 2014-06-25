@@ -1,22 +1,31 @@
+var notes = JSON.parse(localStorage.getItem("notes")) || [];
+var append_notes = function() {
+  $('ul li').remove();
+  for(i = 0; i < notes.length; i++) {
+    $('ul').append("<li>"+notes[i]+"</li>");
+  }
+}
+var storage = function() {
+  var input = $("#text_input");
+  input.focus();
+  if(input.val() == "") {
+    return;
+  }
+  localStorage.setItem("notes", JSON.stringify(notes));
+  notes.push(input.val());
+  input.val("");
+  append_notes();
+}
+
+
 $(document).ready(function(){
+  append_notes();
   $('#add_note').on('click', function(){
-    var input = $("#text_input");
-      input.focus();
-      if(input.val() == "") {
-        return;
-      }
-    $('ul').append("<li>"+input.val()+"</li>");
-    input.val("");
+    storage();
   });
   $("#text_input").keyup(function(e){
     if(e.keyCode === 13) {
-    var input = $("#text_input");
-      input.focus();
-      if(input.val() == "") {
-        return;
-      }
-    $('ul').append("<li>"+input.val()+"</li>");
-    input.val("");
+      storage();
     }
   })
 });
