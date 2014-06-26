@@ -2,8 +2,9 @@ var notes = JSON.parse(localStorage.getItem("notes")) || [];
 var append_notes = function() {
   $('hr').remove();
   $('ul li').remove();
-  for(i = 0; i < notes.length; i++) {
-    $('ul').append("<li>"+notes[i]+"</li>"+"<hr>");
+  var reverse_notes = notes.slice(0).reverse();
+  for(i = 0; i < reverse_notes.length; i++) {
+    $('ul').append("<li>"+reverse_notes[i]+"</li>"+"<hr>");
   }
 }
 var storage = function() {
@@ -13,7 +14,6 @@ var storage = function() {
     return;
   }
   notes.push(input.val());
-  notes.reverse();
   localStorage.setItem("notes", JSON.stringify(notes));
   append_notes();
   input.val("");
