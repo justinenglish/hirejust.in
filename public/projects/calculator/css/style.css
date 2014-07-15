@@ -22,36 +22,17 @@ body {
   margin: 0;
 }
 
-.buttons ul li:nth-child(4) {
+.buttons ul li.dark_gray {
   background-color: #ccc;
   border: 1px solid #bbb;
   font-weight: bold;
 }
 
-.buttons ul li:nth-child(9) {
-  background-color: #ccc;
-  border: 1px solid #bbb;
-  font-weight: bold;
-}
-
-.buttons ul li:nth-child(14) {
-  background-color: #ccc;
-  border: 1px solid #bbb;
-  font-weight: bold;
-}
-
-.buttons ul li:nth-child(19) {
-  background-color: #ccc;
-  border: 1px solid #bbb;
-  font-weight: bold;
-}
-
-.buttons ul li:nth-child(18) {
+.buttons ul li.blue {
   background-color: #597dc1;
   border: 1px solid #0c4fc9;
   font-weight: bold;
 }
-
 
 #layout {
   width: 357px;
