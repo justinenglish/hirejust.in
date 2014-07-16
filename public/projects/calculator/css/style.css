@@ -15,6 +15,7 @@ body {
   width: 75px;
   display: inline-block;
   border: 1px solid #ccc;
+  cursor: pointer;
 }
 
 .buttons ul {
@@ -43,7 +44,8 @@ body {
 }
 
 .display {
-  text-indent: 300px;
+  direction: rtl;
+  text-indent: 5px;
   font-size: 35px;
   width: 337px;
   margin: 5px 7px 15px 7px;
@@ -51,4 +53,17 @@ body {
   color: black;
   background-color: #f8f9fb;
   border: 1px solid #bbb;
+}
+
+.clear {
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  width: 339px;
+  margin: 20px 7px 0 7px;
+  background-color: #e2b472;
+  cursor: pointer;
+  border: 1px solid #dda14b;
+
 }
