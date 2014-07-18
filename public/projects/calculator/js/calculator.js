@@ -1,36 +1,52 @@
-$(document).ready(function() {
-  $('[data-buttons]').on('click', function(event) {
-    //get input value
-    var  input_value = $('.display').val();
-    //get clicked value
-    var button_value = $(event.currentTarget).attr('data-buttons');
-    //1. check if operator is already on display
-    //and at end of string.
-    var first_character = input_value.substr(0, 1);
-    var last_character = input_value.substr(input_value.length-1, 1);
-    var operators = ["/", "*", "-", "+"];
-    //2. last character is an operator
-    var is_input_operator = operators.indexOf(last_character) > -1;
-    var is_button_operator = operators.indexOf(button_value) > -1;
-    if(is_input_operator && is_button_operator) {
-      input_value = input_value.slice(0, input_value.length-1);
+var Calculator = {
+  display:  $('.display'),
+  btn_clear: $('.clear'),
+  btn_total: $('#total'),
+  btn_data: $('[data-buttons]'),
+  operators: ["/", "*", "-", "+"],
+
+  init: function () {
+    var self = this;
+    this.btn_data.click(function(event) {
+      self.btn_data_click_handler(event);
+    });
+    this.btn_clear.click(function() {
+      self.clear();
+    });
+    this.btn_total.click(function() {
+      self.total();
+    });
+  },
+  total: function () {
+    return this.display.val(eval(this.input_value()));
+  },
+  clear: function () {
+    return this.display.val('');
+  },
+  input_value:  function () {
+    return this.display.val();
+  },
+  button_value: function (event) {
+    return $(event.currentTarget).attr('data-buttons');
+  },
+  first_character: function () {
+    return this.input_value().substr(0, 1);
+  },
+  last_character: function() {
+    return this.input_value().substr(this.input_value().length-1, 1);
+  },
+  btn_data_click_handler: function (event) {
+    if(this.operators.indexOf(this.last_character()) > -1 && this.operators.indexOf(this.button_value(event)) > -1) {
+      this.input_value().slice(0, this.input_value().length-1);
     }
-    if(input_value == "" && button_value != "-" && is_button_operator) {
+    if(this.input_value() == "" && this.button_value(event) != "-" && this.operators.indexOf(this.button_value(event)) > -1) {
       return;
     }
-    // 3. pressing = should evaluate what the value is inside the input.
-    //create combined value
-    var new_value = input_value+button_value;
-    //set input value to combined value
-    $('.display').val(new_value);
-  });
-  //create combined value
-  $('#equation').on('click', function() {
-    //set input value to combined value
-    var total = $('.display').val();
-    $('.display').val(eval(total));
-  });
-  $('.clear').on('click', function() {
-    $('.display').val('');
-  });
+    var new_value = this.input_value()+this.button_value(event);
+    this.display.val(new_value);
+  }
+}
+
+$(document).ready(function() {
+  Calculator.init();
 });
