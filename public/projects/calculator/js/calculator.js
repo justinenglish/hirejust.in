@@ -18,32 +18,33 @@ var Calculator = {
     });
   },
   total: function () {
-    return this.display.val(eval(this.input_value()));
+    return this.display.val(eval(this.value()));
   },
   clear: function () {
     return this.display.val('');
   },
-  input_value:  function () {
+  value:  function () {
     return this.display.val();
   },
-  button_value: function (event) {
-    return $(event.currentTarget).attr('data-buttons');
-  },
   first_character: function () {
-    return this.input_value().substr(0, 1);
+    return this.value().substr(0, 1);
   },
   last_character: function() {
-    return this.input_value().substr(this.input_value().length-1, 1);
+    return this.value().substr(this.value().length-1, 1);
   },
   btn_data_click_handler: function (event) {
-    if(this.operators.indexOf(this.last_character()) > -1 && this.operators.indexOf(this.button_value(event)) > -1) {
-      this.input_value().slice(0, this.input_value().length-1);
+    var btn_value = $(event.currentTarget).attr('data-buttons'),
+        last_is_operator = this.operators.indexOf(this.last_character()) > -1,
+        click_is_operator = this.operators.indexOf(btn_value) > -1,
+        new_value = this.value();
+
+    if(last_is_operator && click_is_operator) {
+      new_value = this.value().slice(0, this.value().length-1);
     }
-    if(this.input_value() == "" && this.button_value(event) != "-" && this.operators.indexOf(this.button_value(event)) > -1) {
+    if(new_value == "" && btn_value != "-" && click_is_operator) {
       return;
     }
-    var new_value = this.input_value()+this.button_value(event);
-    this.display.val(new_value);
+    this.display.val(new_value + btn_value);
   }
 }
 
