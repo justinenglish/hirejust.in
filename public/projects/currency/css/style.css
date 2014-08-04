@@ -1,0 +1,51 @@
+body {
+  background-color: #edfbe5;
+}
+
+#layout {
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.main_box {
+  background: white;
+  box-shadow: 1px 2px 4px 2px;
+  height: 350px;
+}
+
+.main_box .title {
+  background-color: #eee;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Playfair Display SC', sans-serif;
+  font-size: 20px;
+  box-shadow: 1px 1px 3px 1px;
+}
+
+.main_box #input_box {
+  margin: 50px 0 50px 50px;
+  height: 25px;
+  display: block;
+}
+
+.main_box #output_box {
+  margin-left: 50px;
+  height: 25px;
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  left: 215px;
+  top: 238px;
+}
+
+.us_dollars {
+  position: relative;
+  left: 215px;
+  top: -72px;
+}

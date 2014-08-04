@@ -2,23 +2,45 @@
 <html>
   <head>
     <title>Currency Converter</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div id="layout">
-      <div class="container">
-        <div class="currency">
-          <ul>
-            <li><img src="images/us_dollar.png" id="us_img"></li>
-            <li><img src="images/canada.png" id="canada_img"></li>
-            <li><img src="images/euro.png" id="euro_img"></li>
-            <li><img src="images/mexico_peso.png" id="mexico_img"></li>
-            <li><img src="images/yen.png" id="yen_img"><br></li>
+      <div class="main_box">
+        <p class="title">What is your money worth somewhere else?</p>
+        <input type="text" id="input_box">
+        <p class="us_dollars">US Dollars</p>
+
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+              Canadian</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+              Euro</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+              Peso</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+              Yen</a></li>
           </ul>
         </div>
+
+        <br>
+        <input type="text" id="output_box">
       </div>
     </div>
     <script type="text/javascript" src="../../js/jquery.1.11.1.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/currency.js"></script>
   </body>
 </html>
