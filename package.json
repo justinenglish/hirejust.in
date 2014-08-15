@@ -1,0 +1,14 @@
+{
+  "name": "hirejust.in",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinenglish/hirejust.in.git"
+  },
+  "author": "Justin English",
+  "homepage": "https://github.com/justinenglish/hirejust.in",
+  "dependencies": {
+    "gulp": "3.8.7",
+    "gulp-shell": "0.2.9"
+  }
+}

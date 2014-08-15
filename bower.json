@@ -1,0 +1,21 @@
+{
+  "name": "Justin English",
+  "version": "1.0.0",
+  "homepage": "https://github.com/justinenglish/hirejust.in",
+  "authors": [
+    "Justin English <justnenglish@gmail.com>"
+  ],
+  "description": "My website showcasing my work",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1"
+  }
+}
