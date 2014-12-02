@@ -17,6 +17,14 @@ class HireJustin < Sinatra::Base
     send_file File.join(settings.public_folder, 'projects/slick/index.html')
   end
 
+  get '/projects/restaurant/' do
+    send_file File.join(settings.public_folder, 'projects/restaurant/index.html')
+  end
+
+  get '/projects/note_app/' do
+    send_file File.join(settings.public_folder, 'projects/note_app/index.html')
+  end
+
 end
 
 HireJustin.run!
