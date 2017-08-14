@@ -46,10 +46,16 @@ p {
 .main-nav ul li a {
   text-decoration: none;
   color: inherit;
+  -webkit-transition: all 0.7s;
+  -moz-transition:    all 0.7s;
+  -ms-transition:     all 0.7s;
+  -o-transition:      all 0.7s;
+
 }
 
 .main-nav ul li a:hover {
   color: #111;
+
 }
 
 /******* MEDIA QUERIES *******/
