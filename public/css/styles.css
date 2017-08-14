@@ -58,6 +58,19 @@ p {
 
 }
 
+/******* HERO BAND *******/
+.hero-wrapper {
+  text-align: center;
+}
+
+.hero-wrapper .hero {
+  width: 75%;
+  height: 400px;
+  background: url('https://unsplash.it/800/400?image=43') no-repeat center center;
+  background-size: cover;
+  display: inline-block;
+}
+
 /******* MEDIA QUERIES *******/
 @media (max-width: 480px) {
   .main-nav {
