@@ -10,8 +10,18 @@ body, html {
   color: #aaa;
 }
 
+#site-wrapper {
+  width: inherit;
+  height: inherit;
+}
+
 p {
   font-size: 1.3em;
+}
+
+.container {
+  margin: 0 15%;
+  min-height: 400px;
 }
 
 /******* MAIN NAV *******/
@@ -58,12 +68,8 @@ p {
 }
 
 /******* HERO BAND *******/
-.hero-wrapper {
-  text-align: center;
-}
-
-.hero-wrapper .hero {
-  width: 75%;
+.container .hero {
+  width: 100%;
   height: 400px;
   background: url('https://unsplash.it/800/400?image=43') no-repeat center center;
   background-size: cover;
