@@ -119,6 +119,7 @@ h1,h2,h3,h4,h5 {
   margin-bottom: 2%;
   float: left;
   opacity: 0.6;
+  transition: opacity 0.85s;
 }
 
 .portfolio a:last-child {
