@@ -135,6 +135,20 @@ h1,h2,h3,h4,h5 {
   background-size: cover;
 }
 
+/******* FOOTER *******/
+.footer {
+  padding: 20px 0;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  background-color: #aaa;
+}
+
+.footer .copyright {
+  font-size: 0.8em;
+}
+
 /******* MEDIA QUERIES *******/
 @media (max-width: 480px) {
   .main-nav {
