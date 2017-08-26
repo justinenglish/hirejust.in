@@ -136,6 +136,36 @@ h1,h2,h3,h4,h5 {
   background-size: cover;
 }
 
+/******* CONTACT *******/
+.contact {
+  min-height: 100px;
+  margin: 20px 0;
+  padding: 20px 0;
+  overflow: auto;
+}
+
+.contact .portrait {
+  float: left;
+  margin-right: 15px;
+}
+
+.contact .social {
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px 0;
+}
+
+.contact .social img {
+  max-width: 35px;
+  margin-right: 10px;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.contact .social img:hover {
+  opacity: 1;
+}
+
 /******* FOOTER *******/
 .footer {
   padding: 20px 0;
