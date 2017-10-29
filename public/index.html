@@ -7,7 +7,10 @@
 
       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
       <link rel="stylesheet" href="css/styles.css" />
-
+      <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
       <title>Justin English</title>
   </head>
   <body>
@@ -28,13 +31,13 @@
         <div class="hero"></div>
       </div>
 
-      <div class="container pl-25 pr-25" id="about">
+      <div class="container pl-25 pr-25" id="about" data-anchor="#about">
         <h2>About Me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc mauris, vulputate ultricies enim a, aliquam aliquam nunc. Integer cursus et elit at pulvinar. Mauris a elit leo. Duis sit amet metus elit. In in mauris luctus erat consequat iaculis. Suspendisse potenti. Ut ornare facilisis interdum. Pellentesque maximus tortor feugiat purus bibendum, a consequat sem tincidunt. Mauris egestas scelerisque odio, sed convallis risus euismod eget.</p>
         <p>Nam gravida vitae diam quis consectetur. Nam sollicitudin lorem lectus, et gravida justo pharetra vel. Aenean varius ac turpis ut consectetur. Cras fringilla diam sed urna porttitor, in tincidunt erat malesuada. Nam sed justo rutrum, congue arcu non, tempus ex. In hac habitasse platea dictumst. Duis eget nisl ut neque euismod dignissim scelerisque vel sem. In porttitor lectus ut placerat ultricies. Phasellus tempus, dui a sollicitudin malesuada, lectus ante varius erat, ullamcorper volutpat orci justo at felis. Aliquam at nibh faucibus, egestas enim eget, convallis ipsum. Aenean viverra pretium orci vel euismod. Etiam rutrum, libero sed ornare maximus, augue elit feugiat orci, sit amet scelerisque risus arcu in enim. Donec ornare aliquam cursus.</p>
       </div>
 
-      <div class="container pl-25 pr-25 clear" id="portfolio">
+      <div class="container pl-25 pr-25 clear" id="portfolio" data-anchor="#portfolio">
         <h2>Portfolio</h2>
 
         <div class="portfolio">
@@ -48,7 +51,7 @@
         </div>
       </div>
 
-      <div class="contact" id="contact">
+      <div class="contact" id="contact" data-anchor="#contact">
         <div class="container pl-25 pr-25">
           <h2>Contact</h2>
 
@@ -75,5 +78,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
