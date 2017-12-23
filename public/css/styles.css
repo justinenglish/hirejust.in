@@ -7,11 +7,11 @@ body, html {
   padding: 0;
   margin: 0;
   color: #aaa;
+  background-color: #F9F9F9;
 }
 
 #site-wrapper {
-  background-color: #F9F9F9;
-  max-width: 1400px;
+  max-width: 1200px;
   height: 100%;
   margin: auto;
 }
@@ -21,7 +21,7 @@ p {
 }
 
 h1,h2,h3,h4,h5 {
-  color: inherit;
+  color: #2c3e50;
 }
 
 .container {
@@ -143,21 +143,24 @@ h1,h2,h3,h4,h5 {
 
 /******* CONTACT *******/
 .contact {
+  margin-top: 30px;
   min-height: 100px;
-  margin: 20px 0;
-  padding: 20px 0;
   overflow: auto;
+}
+
+.contact p {
+  margin-top: 0;
 }
 
 .contact .portrait {
   float: left;
   margin-right: 15px;
+  width: 85px;
 }
 
 .contact .social {
   display: inline-block;
   vertical-align: top;
-  padding: 30px 0;
 }
 
 .contact .social img {
@@ -178,7 +181,7 @@ h1,h2,h3,h4,h5 {
   text-align: center;
   line-height: 30px;
   color: #fff;
-  background-color: #aaa;
+  background-color: #18bc9c;
 }
 
 .footer .copyright {
