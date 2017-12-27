@@ -15,8 +15,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  json
+  json (= 2.1.0)
   sinatra (= 1.4.7)
+
+RUBY VERSION
+   ruby 2.4.3p205
 
 BUNDLED WITH
    1.16.1
