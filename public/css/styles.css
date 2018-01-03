@@ -155,6 +155,7 @@ h1,h2,h3,h4,h5 {
 .contact .portrait {
   float: left;
   margin-right: 15px;
+  margin-top: 3px;
   width: 135px;
 }
 
@@ -206,6 +207,11 @@ h1,h2,h3,h4,h5 {
     width: 100%;
     margin: 0 0 25px 0;
     float: none;
+  }
+
+  .contact .social img,
+  .portfolio a {
+    opacity: 1;
   }
 
   .container.mobile-full-width {
