@@ -106,7 +106,8 @@ p {
   height: 225px;
   cursor: pointer;
   border-radius: 5px;
-  opacity: 0.4;
+  opacity: 0.65;
+  background-size: 100% 100%;
 }
 
 .portfolio a.portfolio-box:hover {
@@ -129,8 +130,8 @@ p {
   background-image: url('../img/dow.png');
 }
 
-.portfolio a.dcc {
-  background-image: url('../img/dcc.png');
+.portfolio a.dowst {
+  background-image: url('../img/dowst.png');
 }
 
 .portfolio a.sentricon {
